@@ -30,6 +30,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: maxmilia/maxmilia.github.io  # 替换成上文所创建的个人主页仓库
           publish_branch: cf-pages
           publish_dir: ./public
