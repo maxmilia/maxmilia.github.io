@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main  # 每次推送到 main 分支都会触发部署任务
+      - master  # 每次推送到 main 分支都会触发部署任务
 
 jobs:
   deploy:
@@ -28,5 +28,5 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: maxmilia/maxmilia.github.io  # 替换成上文所创建的个人主页仓库
-          publish_branch: main
+          publish_branch: cf-pages
           publish_dir: ./public
